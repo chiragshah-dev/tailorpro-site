@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailors Pro</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    integrity="" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="shortcut icon" href="image/listimg.png">
+</head>
+
+<body class="font-['InriaSerif']">
+  <section class="relative  bg-[url('images/main-bg.png')] bg-contain bg-start h-full bg-no-repeat">
+    <!-- Content -->
+    <div class="relative flex justify-center mt-10">
+      <img src="./images/logo.png" alt="Tailors Pro" class="">
+    </div>
+
+    <!-- Banner Slider -->
+    <div class="swiper banner-swiper">
+      <div class="swiper-wrapper">
+        <!-- Slide 1 -->
+        <div class="swiper-slide">
+          <div
+            class="relative container mx-auto grid md:grid-cols-2 gap-10 items-center lg:px-3 md:px-5 px-0  mt-10 cursor-pointer">
+            <!-- Left Content -->
+            <div class="space-y-4 mx-auto text-[#000000] lg:pl-0 lg:pr-0 pl-10 pr-10">
+              <p class="text-[20px]">With Tailors Pro</p>
+              <h1 class="text-3xl md:text-5xl font-bold leading-snug">
+                Ditch The Paperwork <br>
+                Perfect The Patchwork
+              </h1>
+              <p class="max-w-md">
+                Tailors Pro is a smart digital assistant built exclusively for tailors. No more juggling with pen and
+                paper —
+                manage all your measurements, records, and orders seamlessly in one place.
+              </p>
+              <!-- Store Buttons -->
+              <div class="flex gap-4">
+                <a href="#"><img src="images/goggle.png" alt="Google Play" class="h-12"></a>
+                <a href="#"><img src="images/appstore.png" alt="App Store" class="h-12"></a>
+              </div>
+            </div>
+            <!-- Right Image -->
+            <div class="relative flex justify-center items-center">
+              <img src="images/mockups-screen.png" alt="App screen" class="w-full max-w-[700px] pt-5">
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="swiper-slide">
+          <div
+            class="relative container mx-auto grid md:grid-cols-2 gap-10 items-center lg:px-3 md:px-5 px-0 lg:mt-10 mt-10 cursor-pointer">
+            <div class="space-y-4 mx-auto text-[#000000] lg:pl-0 lg:pr-0 pl-10 pr-10">
+              <h1 class="text-3xl md:text-5xl font-bold leading-snug">
+                Managing your tailoring has<br>
+                Never been simpler!
+              </h1>
+              <p class="max-w-md">
+                Boost your customers by offering a seamless experience. With Tailors Pro, every measurement, order, and
+                detail is handled perfectly, keeping clients coming back.
+              </p>
+              <div class="flex gap-4">
+                <a href="#"><img src="images/goggle.png" alt="Google Play" class="h-12"></a>
+                <a href="#"><img src="images/appstore.png" alt="App Store" class="h-12"></a>
+              </div>
+            </div>
+            <div class="relative flex justify-center items-center">
+              <img src="images/mockup-screen-2.png" alt="App screen" class="w-full max-w-[600px]">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pagination + Navigation -->
+      <div class="swiper-pagination"></div>
+      <!-- <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div> -->
+    </div>
+
+    <!-- why to choose -->
+    <div class="flex justify-center mx-auto p-5 pt-10">
+      <h1 class="lg:text-3xl text-2xl font-normal pb-5">Why Choose <a class="text-[#000000] font-semibold"> Tailor's Pro?</a></h1>
+    </div>
+
+    <!-- lets connect -->
+    <section
+      class="relative bg-[url('images/bg-2.png')] bg-cover bg-start text-white text-center py-20 lg:h-[650px] h-full">
+      <!-- Content on top of bg -->
+      <div class="relative z-10 bg-[#0000009c] p-5 max-w-[700px] mx-auto rounded-lg lg:mt-40 mt-0">
+        <p class="mt-4 text-[20px] sm:text-[22px]">Let's Get Connected</p>
+        <div class="mt-5 flex flex-col sm:flex-row justify-center items-start gap-4">
+          <!-- Name Input -->
+          <div class="relative w-full">
+            <input id="name" type="text" placeholder="Name" class="p-2 w-full rounded border border-gray-300 text-[#0000008a] bg-white">
+            <div id="nameError" class="text-red-500 text-sm mt-2 h-5 opacity-0 transition-opacity">Please enter your name.</div>
+          </div>
+
+          <!-- Email Input -->
+          <div class="relative w-full">
+            <input id="email" type="email" placeholder="Email" class="p-2 w-full rounded border border-gray-300 text-[#0000008a] bg-white">
+            <div id="emailError" class="text-red-500 text-sm mt-2 h-5 opacity-0 transition-opacity">Please enter a valid email.</div>
+          </div>
+
+          <!-- Submit Button -->
+          <button id="submitBtn" class="bg-[#191919] text-white p-2 rounded px-6 py-2.5 text-[16px] w-full sm:w-auto cursor-pointer">Submit</button>
+        </div>
+      </div>
+
+      <div id="successMsg" class="text-green-500 text-lg mt-4 opacity-0 transition-opacity h-5"></div>
+
+      <!-- cards -->
+      <section class="relative grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6 p-6 md:p-10">
+        <!-- Card 1 -->
+        <div class="relative z-10 bg-white p-6 sm:p-8 shadow-xl text-center">
+          <div class="card-img flex justify-center mb-4">
+            <img src="images/toolkit.png" alt="" class="max-w-[180px] md:max-w-[220px] h-auto">
+          </div>
+          <h2 class="text-[20px] font-normal text-[#000000]">All-in-One Tailor Toolkit</h2>
+          <p class="text-gray-600 font-[lato] text-sm sm:text-[15px] mt-3 mx-auto max-w-[300px]">
+            Manage customers, store, measurements, create invoices, and track payments –
+            <span class="text-[#000000] font-semibold">everything in one easy app</span>.
+          </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="relative z-10 bg-white p-6 sm:p-8 shadow-xl text-center">
+          <div class="card-img flex justify-center mb-4">
+            <img src="images/time.png" alt="" class="max-w-[180px] md:max-w-[220px] h-auto">
+          </div>
+          <h2 class="text-[20px] font-normal text-[#000000]">Save Time & Stay Organized</h2>
+          <p class="text-gray-600 font-[lato] text-sm sm:text-[15px] mt-3 mx-auto max-w-[300px]">
+            <span class="text-[#000000] font-semibold">No more paper records</span> or lost measurements –
+            Tailor’s Pro keeps your business neat and hassle-free.
+          </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="relative z-10 bg-white p-6 sm:p-8 shadow-xl text-center">
+          <div class="card-img flex justify-center mb-4">
+            <img src="images/professionl-inovoicing.png" alt="" class="max-w-[180px] md:max-w-[220px] h-auto">
+          </div>
+          <h2 class="text-[20px] font-normal text-[#000000]">Professional Invoicing</h2>
+          <p class="text-gray-600 font-[lato] text-sm sm:text-[15px] mt-3 mx-auto max-w-[300px]">
+            <span class="text-[#000000] font-semibold">Generate branded invoices</span> and send them instantly via
+            WhatsApp or print them for your customers.
+          </p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="relative z-10 bg-white p-6 sm:p-8 shadow-xl text-center">
+          <div class="card-img flex justify-center mb-4">
+            <img src="images/digitally.png" alt="" class="max-w-[180px] md:max-w-[220px] h-auto">
+          </div>
+          <h2 class="text-[20px] font-normal text-[#000000]">Grow Your Business Digitally</h2>
+          <p class="text-gray-600 font-[lato] text-sm sm:text-[15px] mt-3 mx-auto max-w-[300px]">
+            Look more professional, build stronger customer relationships, and focus on stitching while Tailor’s Pro
+            handles the rest.
+          </p>
+        </div>
+      </section>
+    </section>
+
+    <!-- Best Features For Tailors -->
+    <div class="text-center max-w-3xl mx-auto py-10 lg:mt-70 mb-5">
+      <h2 class="text-[25px] font-semibold">Best Features For Tailors</h2>
+      <p class="mt-3 text-gray-600 text-[16px] font-[lato]">
+        Discover the standout features that make our platform unique. From intuitive design to powerful tools, each
+        feature is crafted to deliver a seamless and efficient experience, helping you achieve more with ease
+      </p>
+    </div>
+
+    <!-- Best Features For Tailors -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+
+      <!-- Block 1 -->
+      <div class="flex lg:flex-nowrap md:flex-nowrap flex-wrap justify-between gap-8 items-center">
+        <!-- Left -->
+        <div class="w-full lg:w-4/12">
+          <div class="text-start">
+            <h3 class="text-lg font-semibold text-gray-800">Measurement Headlining</h3>
+            <p class="mt-2 text-gray-600">
+              Save and access customer measurements digitally for accuracy and convenience.
+              Ensure perfect fits without the hassle of paper notes.
+            </p>
+          </div>
+        </div>
+        <!-- Right -->
+        <div class="w-full lg:w-8/12 flex justify-center lg:justify-end">
+          <img src="images/measurement.png" class="w-full max-w-md lg:max-w-full h-auto" alt="Measurement" />
+        </div>
+      </div>
+
+      <!-- Block 2 -->
+      <div class="flex lg:flex-nowrap md:flex-nowrap flex-wrap-reverse  justify-between gap-8 items-center">
+        <!-- Left -->
+        <div class="w-full lg:w-4/12 flex justify-center lg:justify-start">
+          <img src="images/customer.png" class="w-full max-w-md lg:max-w-full h-auto" alt="Customer" />
+        </div>
+        <!-- Right -->
+        <div class="w-full lg:w-8/12">
+          <div class="text-start">
+            <h3 class="text-lg font-semibold text-gray-800">Customer Management</h3>
+            <p class="mt-2 text-gray-600">
+              Keep all your customer details, measurements, and preferences in one organized place.
+              Build stronger relationships with quick access to every profile.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Block 3 -->
+      <div class="flex lg:flex-nowrap md:flex-nowrap flex-wrap  justify-between gap-8 items-center">
+        <!-- Left -->
+        <div class="w-full lg:w-4/12">
+          <div class="text-start">
+            <h3 class="text-lg font-semibold text-gray-800">Order Tracking</h3>
+            <p class="mt-2 text-gray-600">
+              Track every order from request to delivery with clear status.
+              Keep your customers updated at every stage.
+            </p>
+          </div>
+        </div>
+        <!-- Right -->
+        <div class="w-full lg:w-8/12 flex justify-center lg:justify-end">
+          <img src="images/order.png" class="w-full max-w-md lg:max-w-full h-auto" alt="Order" />
+        </div>
+      </div>
+
+      <!-- Block 4 -->
+      <div class="flex lg:flex-nowrap md:flex-nowrap flex-wrap-reverse justify-between gap-8 items-center">
+        <!-- Left -->
+        <div class="w-full lg:w-4/12 flex justify-center lg:justify-start">
+          <img src="images/sales.png" class="w-full max-w-md lg:max-w-full h-auto" alt="Sales" />
+        </div>
+        <!-- Right -->
+        <div class="w-full lg:w-8/12">
+          <div class="text-start">
+            <h3 class="text-lg font-semibold text-gray-800">Sales History</h3>
+            <p class="mt-2 text-gray-600">
+              View and analyse all your past orders and payments in one dashboard.
+              Track growth, spot trends, and plan smarter for your business.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- stats -->
+    <section id="stats" class="lg:py-12 py-6">
+      <div class="max-w-8xl mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 text-center">
+
+          <!-- Item 1 -->
+          <div class="lg:p-6 p-2 flex gap-5 items-center flex lg:justify-center justify-start">
+            <p class="text-[20px] font-bold text-[#595959]">Downloads</p>
+            <!-- <p class="text-base sm:text-lg md:text-[20px] font-bold text-[#595959]">Downloads</p> -->
+            <div class="flex items-baseline space-x-1">
+              <span data-purecounter-start="0" data-purecounter-end="10000" data-purecounter-duration="1"
+                class="purecounter text-4xl font-bold text-[#595959]"></span>
+              <span class="text-2xl font-bold text-[#595959]">+</span>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="lg:p-6 p-2 flex gap-5 items-center flex lg:justify-center justify-start">
+            <p class="text-[20px] font-bold text-[#595959]">Ratings</p>
+            <div class="flex items-baseline space-x-1">
+              <span data-purecounter-start="0" data-purecounter-end="4.8" data-purecounter-decimals="1"
+                data-purecounter-duration="1" class="purecounter text-4xl font-bold text-[#595959]"></span>
+              <span class="text-2xl font-bold text-[#595959]">/5</span>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="lg:p-6 p-2 flex gap-5 items-center flex lg:justify-center justify-start">
+            <p class="text-[20px] font-bold text-[#595959]">Orders Completed</p>
+            <div class="flex items-baseline space-x-1">
+              <span data-purecounter-start="0" data-purecounter-end="1000" data-purecounter-duration="1"
+                class="purecounter text-4xl font-bold text-[#595959]"></span>
+              <span class="text-2xl font-bold text-[#595959]">+</span>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="lg:p-6 p-2 flex gap-5 items-center flex lg:justify-center justify-start">
+            <p class="text-[20px] font-bold text-[#595959]">Cities Covered</p>
+            <div class="flex items-baseline space-x-1">
+              <span data-purecounter-start="0" data-purecounter-end="4.8" data-purecounter-decimals="1"
+                data-purecounter-duration="1" class="purecounter text-4xl font-bold text-[#595959]"></span>
+              <span class="text-2xl font-bold text-[#595959]">/5</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Transform your business -->
+    <section class="w-full bg-cover bg-center py-16 px-6 relative"
+      style="background-image: url('images/transform-bg.png');">
+      <div class="max-w-7xl mx-auto flex lg:flex-nowrap  flex-wrap  items-center gap-10">
+
+        <!-- Left Text -->
+        <div class="text-white lg:w-1/2 space-y-6 w-full lg:max-w-[400px]">
+          <h2 class="text-3xl md:text-4xl font-bold">
+            Transform Your Tailoring Business
+          </h2>
+          <p class="text-[18px] font-semibold">The Ultimate App for Professional Tailors</p>
+          <p class="text-[18px] leading-relaxed font-[lato]">
+            Manage measurements, orders, and customers with ease.
+            Streamline your tailoring business with our comprehensive solution.
+          </p>
+          <div class="flex gap-4 mt-6">
+            <a href="#">
+              <img src="images/appstore.png" alt="App Store" class="h-12">
+            </a>
+            <a href="#">
+              <img src="images/goggle.png" alt="Google Play" class="h-12">
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Side (Mockups) -->
+        <!-- <div class="absolute flex lg:flex-nowrap flex-wrap lg:w-1/2 justify-center gap-6 top-6 right-20 items-center">
+          <img src="images/mockup-1.png" alt="App Screen 1" class="h-64 lg:h-96 rounded-xl shadow-xl">
+          <img src="images/mockup-2.png" alt="App Screen 2" class="h-64 lg:h-110 rounded-xl shadow-xl hidden md:block">
+          <img src="images/mockup-3.png" alt="App Screen 3" class="h-64 lg:h-96 rounded-xl shadow-xl hidden lg:block">
+        </div> -->
+        <div
+          class="lg:absolute mx-auto flex justify-center flex-wrap gap-6 mt-10 lg:mt-0 lg:top-6 lg:right-10 items-center">
+          <img src="images/mockup-1.png" class="h-64 md:h-96 rounded-xl shadow-xl">
+          <img src="images/mockup-2.png" class="h-64 md:h-110 rounded-xl shadow-xl">
+          <img src="images/mockup-3.png" class="h-64 md:h-96 rounded-xl shadow-xl">
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="lg:pt-35 pt-15 lg:pb-20 pb-5 text-center">
+      <h2 class="text-[27px] font-normal lg:mb-15 mb-5">Our Tailor ’s Voices</h2>
+      <!-- <div class="flex items-center justify-center gap-10 mx-auto"> -->
+      <div class="flex flex-col md:flex-row items-center justify-center gap-10 mx-auto">
+
+        <div class="lg:w-6/12 w-full pl-5 pr-5 flex lg:justify-end justify-center">
+          <!-- Tailor Image -->
+          <!-- <img src="images/tailor-voice.png" alt="Tailor" class="rounded-lg shadow-md w-100 object-cover"> -->
+          <img src="images/tailor-voice.png" class="rounded-lg shadow-md w-full max-w-md object-cover">
+
+        </div>
+        <div class="lg:w-6/12 w-full pl-5 pr-5 flex lg:justify-start justify-center">
+          <!-- Testimonial -->
+          <div class="lg:max-w-md w-full text-center flex justify-center relative pt-5 pb-10">
+            <div class="text-5xl  text-blue-400 absolute lg:-top-10 lg:left-40 -top-10"><img src="images/mark.png">
+            </div>
+            <p class="text-[18px] leading-relaxed mt-8 text-gray-600 w-100 text-center">
+              Taking customer measurements has become so simple. The app guides me step by step and saves a lot of time.
+            </p>
+          </div>
+        </div>
+
+
+
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-6 px-6 md:px-16">
+      <div
+        class="container mx-auto flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+        <!-- Links -->
+        <div class="flex gap-6 text-[18px]">
+          <a href="privacyandpolicy.html" class="hover:underline">Privacy Policy</a>
+          <a href="termsandcontidion.html" class="hover:underline">Terms And Conditions</a>
+        </div>
+
+
+        <!-- Center -->
+        <div class="flex items-center gap-3 lg:pr-18">
+          <p class="text-[18px] ">Try our App today</p>
+          <i class="fa fa-apple cursor-pointer" aria-hidden="true"></i>
+          <i class="fa fa-play cursor-pointer" aria-hidden="true"></i>
+
+        </div>
+
+
+        <!-- Social Icons -->
+        <div class="flex gap-10 text-xl items-center">
+          <a href="#" class="hover:text-gray-400 w-full max-w-[20px]">
+            <img src="images/twitter.png" />
+          </a>
+          <a href="#" class="hover:text-gray-400">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+          </a>
+          <a href="#" class="hover:text-gray-400">
+            <i class="fa fa-facebook w-5  h-5 bg-white rounded-full text-black py-1 px-1 mt-1" aria-hidden="true"></i>
+          </a>
+
+
+        </div>
+      </div>
+    </footer>
+
+    <!-- Copyright -->
+    <div class="text-center p-2 text-sm text-[#000000]">
+      © 2025 Tailors Pro. All rights reserved
+    </div>
+
+  </section>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const bannerSwiper = new Swiper('.banner-swiper', {
+      loop: true,
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+  <script>
+    // Run PureCounter only when stats section enters viewport
+    const statsSection = document.querySelector("#stats");
+    let started = false;
+
+    const observer = new IntersectionObserver(entries => {
+      if (entries[0].isIntersecting && !started) {
+        new PureCounter(); // start counting
+        started = true;
+      }
+    }, { threshold: 0.3 });
+    observer.observe(statsSection);
+
+
+    const formElements = {
+      name: document.getElementById('name'),
+      email: document.getElementById('email'),
+      nameError: document.getElementById('nameError'),
+      emailError: document.getElementById('emailError'),
+      successMsg: document.getElementById('successMsg'),
+      submitBtn: document.getElementById('submitBtn')
+    };
+
+    // Utility to show/hide errors
+    function showError(element) {
+      element.classList.remove('opacity-0');
+      element.classList.add('opacity-100');
+    }
+
+    function hideError(element) {
+      element.classList.remove('opacity-100');
+      element.classList.add('opacity-0');
+    }
+
+    // Clear all messages after 30 seconds
+    function clearMessages() {
+      setTimeout(() => {
+        hideError(formElements.nameError);
+        hideError(formElements.emailError);
+        formElements.successMsg.classList.remove('opacity-100');
+        formElements.successMsg.classList.add('opacity-0');
+      }, 3000);
+    }
+
+    // Simple validation
+    function validateForm(name, email) {
+      let isValid = true;
+
+      if (!name.trim()) {
+        showError(formElements.nameError);
+        isValid = false;
+      } else {
+        hideError(formElements.nameError);
+      }
+
+      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailPattern.test(email)) {
+        showError(formElements.emailError);
+        isValid = false;
+      } else {
+        hideError(formElements.emailError);
+      }
+
+      return isValid;
+    }
+
+    // Handle submit
+    formElements.submitBtn.addEventListener('click', async (e) => {
+      e.preventDefault();
+
+      const name = formElements.name.value;
+      const email = formElements.email.value;
+
+      if (!validateForm(name, email)) {
+        clearMessages();
+        return;
+      }
+
+      try {
+        // Simulate form submission
+        const response = await fetch('https://devapi.tailorspro.com/api/v1/tailor_enquiries', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ name, email })
+        });
+
+        if (response.ok) {
+          formElements.successMsg.textContent = "💌 Thank you for reaching out! Your message has been received, and we’ll get back to you shortly.";
+          formElements.successMsg.classList.remove('opacity-0');
+          formElements.successMsg.classList.add('opacity-100');
+
+          // Clear form fields
+          formElements.name.value = '';
+          formElements.email.value = '';
+          clearMessages();
+        } else {
+          throw new Error('Submission failed');
+        }
+      } catch (err) {
+        formElements.successMsg.textContent = 'Something went wrong!';
+        formElements.successMsg.classList.remove('opacity-0');
+        formElements.successMsg.classList.add('opacity-100');
+        clearMessages();
+      }
+    });
+  </script>
+</body>
+
+</html>
